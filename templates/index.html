@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Airport Search</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css.min.css"/>
+</head>
+<body>
+<form id="search">
+    <label>
+        Latitude:
+        <input type="number" name="lat" step="any" required>
+    </label>
+    <label>
+        Longitude:
+        <input type="number" name="lon" step="any" required>
+    </label>
+    <label>
+        Range (km):
+        <input type="number" name="r" step="any" required>
+    </label>
+    <label>
+        <button type="submit">Search</button>
+    </label>
+</form>
+<h1 id="result-title" style="visibility: hidden">Results</h1>
+<p id="no-results-text" style="visibility: hidden">No results returned</p>
+<table id="resultTable"></table>
+<script src="index.js"></script>
+</body>
+</html>
